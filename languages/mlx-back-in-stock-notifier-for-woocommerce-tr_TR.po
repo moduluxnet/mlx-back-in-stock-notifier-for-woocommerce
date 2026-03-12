@@ -5,8 +5,8 @@ msgstr ""
 "Project-Id-Version: MLX Back in Stock Notifier for WooCommerce\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mlx-back-in-stock-"
 "notifier-for-woocommerce/\n"
-"POT-Creation-Date: 2026-03-12 07:45+0300\n"
-"PO-Revision-Date: 2026-03-12 07:45+0300\n"
+"POT-Creation-Date: 2026-03-12 08:24+0300\n"
+"PO-Revision-Date: 2026-03-12 08:24+0300\n"
 "Last-Translator: \n"
 "Language-Team: Turkish\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.9\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-KeywordsList: __;esc_html;esc_html__;esc_attr;esc_attr__;__\n"
+"X-Poedit-KeywordsList: __;esc_html__;esc_attr;esc_attr__;__\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: includes/class-bis-admin.php:18
@@ -205,19 +205,243 @@ msgstr ""
 "href=\"%s\">WooCommerce &gt; Durum &gt; Planlanmış İşlemler</a> bölümünden "
 "görüntüleyebilirsiniz."
 
-#: includes/class-bis-admin.php:262
+#: includes/class-bis-admin.php:261
+msgid ""
+"If you notice any failed actions, it usually means your server had a "
+"temporary issue sending an email. You can retry failed actions from the "
+"Scheduled Actions page, and they will be re-queued for processing."
+msgstr ""
+"Başarısız eylemler fark ederseniz, bu genellikle sunucunuzun e-posta "
+"gönderirken geçici bir sorun yaşadığı anlamına gelir. Başarısız eylemleri "
+"Zamanlanmış Eylemler sayfasından yeniden deneyebilirsiniz; bu eylemler "
+"işlenmek üzere yeniden sıraya alınacaktır."
+
+#: includes/class-bis-admin.php:263
+msgid ""
+"If you want to disable background processing for some reason, the plugin "
+"will still work but all emails will be sent synchronously during the page "
+"load that triggers them. This is not recommended for stores with more than a "
+"few waiting users."
+msgstr ""
+"Herhangi bir nedenle arka plan işlemeyi devre dışı bırakmak isterseniz, "
+"eklenti yine de çalışmaya devam eder, ancak tüm e-postalar, bunları "
+"tetikleyen sayfa yükleme sırasında eşzamanlı olarak gönderilir. Bu, birkaç "
+"bekleyen kullanıcısı olan mağazalar için önerilmez."
+
+#: includes/class-bis-admin.php:265
+msgid "Email Deliverability"
+msgstr "E-posta Teslim Edilebilirliği"
+
+#: includes/class-bis-admin.php:266
+msgid ""
+"The plugin uses WooCommerce's built-in email sending functions, which in "
+"turn use WordPress's wp_mail(). To improve deliverability and avoid emails "
+"being marked as spam, the plugin sets the \"From\" name and email address to "
+"match your WooCommerce settings (or defaults to your site name and admin "
+"email)."
+msgstr ""
+"Eklenti, WooCommerce'in yerleşik e-posta gönderme işlevlerini kullanır ve bu "
+"işlevler de WordPress'in wp_mail() işlevini kullanır. Teslim edilebilirliği "
+"artırmak ve e-postaların spam olarak işaretlenmesini önlemek için eklenti, "
+"\"Gönderen\" adını ve e-posta adresini WooCommerce ayarlarınıza uyacak "
+"şekilde ayarlar (veya varsayılan olarak site adınızı ve yönetici e-posta "
+"adresinizi kullanır)."
+
+#: includes/class-bis-admin.php:268
+msgid ""
+"For best results, we recommend using a dedicated SMTP plugin to send your "
+"WooCommerce emails, such as WP Mail SMTP or Post SMTP. These plugins can "
+"help ensure your emails are authenticated properly and have a much higher "
+"chance of reaching your customers' inboxes."
+msgstr ""
+"En iyi sonuçları elde etmek için, WooCommerce e-postalarınızı göndermek "
+"üzere WP Mail SMTP veya Post SMTP gibi özel bir SMTP eklentisi kullanmanızı "
+"öneririz. Bu eklentiler, e-postalarınızın doğru şekilde doğrulanmasını "
+"sağlar ve müşterilerinizin gelen kutularına ulaşma olasılığını önemli ölçüde "
+"artırır."
+
+#: includes/class-bis-admin.php:270
+msgid "Customizing Email Content"
+msgstr "E-posta İçeriğini Özelleştirme"
+
+#: includes/class-bis-admin.php:271
+msgid ""
+"The automatic restock notification email content can be customized by using "
+"the \"woocommerce_email\" filter in your theme's functions.php file or a "
+"custom plugin. The manual alternative suggestion email content can be "
+"customized directly from the form on the \"Waitlists\" tab when managing a "
+"product's waitlist."
+msgstr ""
+"Otomatik stok yenileme bildirimi e-postasının içeriği, temanızın "
+"functions.php dosyasında bulunan \"woocommerce_email\" filtresi veya özel "
+"bir eklenti kullanılarak özelleştirilebilir. Manuel alternatif öneri e-"
+"postasının içeriği, bir ürünün bekleme listesini yönetirken \"Bekleme "
+"Listeleri\" sekmesindeki formdan doğrudan özelleştirilebilir."
+
+#: includes/class-bis-admin.php:273
+msgid ""
+"If you need help with customizations or want to request a new feature, "
+"please contact us at modulux.net."
+msgstr ""
+"Özelleştirmelerle ilgili yardıma ihtiyacınız varsa veya yeni bir özellik "
+"talep etmek istiyorsanız, lütfen modulux.net adresinden bizimle iletişime "
+"geçin."
+
+#: includes/class-bis-admin.php:275
+msgid "Performance & Scalability"
+msgstr "Performans ve Ölçeklenebilirlik"
+
+#: includes/class-bis-admin.php:276
+msgid ""
+"The plugin is designed to be lightweight and efficient, even with large "
+"numbers of waiting users. By leveraging caching for aggregate waitlist "
+"counts and using background processing for emails, it minimizes the impact "
+"on your server's performance."
+msgstr ""
+"Bu eklenti, çok sayıda bekleyen kullanıcı olsa bile hafif ve verimli olacak "
+"şekilde tasarlanmıştır. Toplam bekleme listesi sayıları için önbellekleme "
+"kullanarak ve e-postalar için arka plan işlemeyi kullanarak, sunucunuzun "
+"performansına olan etkisini en aza indirir."
+
+#: includes/class-bis-admin.php:278
+msgid ""
+"The waitlist management page uses pagination to ensure it loads quickly, "
+"even if thousands of users are waiting for a product. The alternative "
+"product suggestion form also uses WooCommerce's native AJAX product search "
+"to make it easy to find and select products without slowing down the page."
+msgstr ""
+"Bekleme listesi yönetim sayfası, binlerce kullanıcı bir ürün için bekliyor "
+"olsa bile hızlı yüklenmesini sağlamak için sayfalama kullanır. Alternatif "
+"ürün öneri formu da, sayfayı yavaşlatmadan ürünleri bulmayı ve seçmeyi "
+"kolaylaştırmak için WooCommerce'in yerel AJAX ürün arama özelliğini kullanır."
+
+#: includes/class-bis-admin.php:280
+msgid ""
+"Overall, the plugin should work well for stores of all sizes, from small "
+"shops with a few waiting customers to large enterprises with thousands of "
+"notifications to manage."
+msgstr ""
+"Genel olarak, eklenti, birkaç müşteri bekleyen küçük dükkanlardan, "
+"yönetilmesi gereken binlerce bildirimi olan büyük işletmelere kadar her "
+"boyuttaki mağaza için iyi çalışmalıdır."
+
+#: includes/class-bis-admin.php:282
+msgid "Troubleshooting"
+msgstr "Sorun giderme"
+
+#: includes/class-bis-admin.php:283
+msgid ""
+"If you are not seeing the \"Notify Me\" button on out-of-stock products, "
+"please check the following:"
+msgstr ""
+"Stokta olmayan ürünlerde \"Beni bilgilendir\" düğmesini görmüyorsanız, "
+"lütfen aşağıdakileri kontrol edin:"
+
+#: includes/class-bis-admin.php:285
+msgid ""
+"Make sure you are logged in, as the button only appears for logged-in users."
+msgstr ""
+"Lütfen oturum açtığınızdan emin olun, çünkü bu düğme yalnızca oturum açmış "
+"kullanıcılar için görünür."
+
+#: includes/class-bis-admin.php:286
+msgid ""
+"Check that the product is actually marked as \"Out of Stock\" in WooCommerce."
+msgstr ""
+"Ürünün WooCommerce'da gerçekten \"Stokta Yok\" olarak işaretlendiğinden emin "
+"olun."
+
+#: includes/class-bis-admin.php:287
+msgid ""
+"Temporarily switch to a default theme like Storefront to rule out any theme "
+"conflicts."
+msgstr ""
+"Tema çakışmalarını önlemek için geçici olarak Storefront gibi varsayılan bir "
+"temaya geçin."
+
+#: includes/class-bis-admin.php:288
+msgid ""
+"Disable other plugins to check for conflicts, especially those that modify "
+"product pages or handle notifications."
+msgstr ""
+"Çakışmaları kontrol etmek için diğer eklentileri, özellikle ürün sayfalarını "
+"değiştiren veya bildirimleri işleyen eklentileri devre dışı bırakın."
+
+#: includes/class-bis-admin.php:292
+msgid ""
+"The following CSS classes can be used to customize the appearance of the "
+"plugin:"
+msgstr ""
+"Aşağıdaki CSS sınıfları, eklentinin görünümünü özelleştirmek için "
+"kullanılabilir:"
+
+#: includes/class-bis-admin.php:316
+msgid ""
+"To customize the plugin appearance, add these CSS classes to your theme's "
+"custom CSS or child theme stylesheet. This keeps the plugin lightweight "
+"without adding unnecessary admin settings."
+msgstr ""
+"Eklentinin görünümünü özelleştirmek için, bu CSS sınıflarını temanızın özel "
+"CSS dosyasına veya alt tema stil sayfasına ekleyin. Bu, gereksiz yönetici "
+"ayarları eklemeden eklentiyi hafif tutar."
+
+#: includes/class-bis-admin.php:318
+msgid "Best Practices"
+msgstr "En İyi Uygulamalar"
+
+#: includes/class-bis-admin.php:320
+msgid ""
+"Regularly check the \"Waitlists\" tab to manage your waiting customers and "
+"suggest alternatives."
+msgstr ""
+"Bekleme listelerindeki müşterileri yönetmek ve alternatifler önermek için "
+"\"Bekleme Listeleri\" sekmesini düzenli olarak kontrol edin."
+
+#: includes/class-bis-admin.php:321
+msgid ""
+"When restocking products, try to update inventory in the morning or early "
+"afternoon to ensure emails go out during optimal open times."
+msgstr ""
+"Ürün stoklarını yenilerken, e-postaların en uygun açılış saatlerinde "
+"gönderilmesini sağlamak için envanteri sabah veya öğleden sonra erken "
+"saatlerde güncellemeye çalışın."
+
+#: includes/class-bis-admin.php:322
+msgid ""
+"Use the alternative product suggestion feature to potentially save sales "
+"even if the original product is delayed."
+msgstr ""
+"Orijinal ürünün teslimatı gecikse bile, alternatif ürün önerisi özelliğini "
+"kullanarak potansiyel satışları kurtarabilirsiniz."
+
+#: includes/class-bis-admin.php:325
+msgid "Support & Contact"
+msgstr "Destek ve İletişim"
+
+#: includes/class-bis-admin.php:326
+msgid ""
+"If you have any questions, need help with customizations, or want to report "
+"a bug, please contact us at <a href=\"https://modulux.net/\" "
+"target=\"_blank\">modulux.net</a>."
+msgstr ""
+"Herhangi bir sorunuz varsa, özelleştirmeler konusunda yardıma ihtiyacınız "
+"varsa veya bir hata bildirmek istiyorsanız, lütfen <a href=\"https://"
+"modulux.net/\" target=\"_blank\">modulux.net</a> adresinden bizimle "
+"iletişime geçin."
+
+#: includes/class-bis-admin.php:329
 msgid "Author:"
 msgstr "Yazar:"
 
-#: includes/class-bis-admin.php:263
+#: includes/class-bis-admin.php:330
 msgid "Version:"
 msgstr "Sürüm:"
 
-#: includes/class-bis-admin.php:338
+#: includes/class-bis-admin.php:405
 msgid "Alternative Product Suggestion"
 msgstr "Alternatif Ürün Önerisi"
 
-#: includes/class-bis-admin.php:343
+#: includes/class-bis-admin.php:410
 msgid "View alternative product here:"
 msgstr "Alternatif ürünü burada görüntüleyin:"
 

@@ -21,12 +21,12 @@
 if (!defined('ABSPATH')) exit;
 
 // Define constants
-define('MLX_WOO_BIS_PATH', plugin_dir_path(__FILE__));
+define('MLX_BIS_PATH', plugin_dir_path(__FILE__));
 define('MLX_BIS_VERSION', '1.0.0');
 
-require_once MLX_WOO_BIS_PATH . 'includes/class-bis-handler.php';
+require_once MLX_BIS_PATH . 'includes/class-bis-handler.php';
 
-require_once MLX_WOO_BIS_PATH . 'includes/class-bis-admin.php';
+require_once MLX_BIS_PATH . 'includes/class-bis-admin.php';
 
 // Declare compatibility with modern WooCommerce features
 add_action('before_woocommerce_init', function() {
@@ -53,7 +53,7 @@ add_action('admin_enqueue_scripts', function() {
     }
 });
 
-// Enqueue CSS for frontend my-account/stock-notifications page
+// Enqueue CSS for frontend pages
 add_action('wp_enqueue_scripts', function() {
     if (is_account_page() || is_product()) {
         wp_enqueue_style('mlx-bis-frontend', plugin_dir_url(__FILE__) . 'assets/mlx-bis.css');

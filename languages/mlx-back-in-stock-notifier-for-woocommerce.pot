@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MLX Back in Stock Notifier for WooCommerce\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mlx-back-in-stock-notifier-for-woocommerce/\n"
-"POT-Creation-Date: 2026-03-12 07:45+0300\n"
+"POT-Creation-Date: 2026-03-12 08:25+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: modulux.net <hello@modulux.net>\n"
 "Language-Team: modulux.net <hello@modulux.net>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.9\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-KeywordsList: __;esc_html;esc_html__;esc_attr;esc_attr__;esc_js__;esc_js\n"
+"X-Poedit-KeywordsList: __;esc_html__;esc_attr;esc_attr__;esc_js__;esc_js\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: includes/class-bis-admin.php:18
@@ -173,19 +173,123 @@ msgstr ""
 msgid "If you have hundreds of users waiting, emails will be sent safely in batches over a few minutes. You can view the status of pending emails by going to <a href=\"%s\">WooCommerce > Status > Scheduled Actions</a>."
 msgstr ""
 
-#: includes/class-bis-admin.php:262
-msgid "Author:"
+#: includes/class-bis-admin.php:261
+msgid "If you notice any failed actions, it usually means your server had a temporary issue sending an email. You can retry failed actions from the Scheduled Actions page, and they will be re-queued for processing."
 msgstr ""
 
 #: includes/class-bis-admin.php:263
+msgid "If you want to disable background processing for some reason, the plugin will still work but all emails will be sent synchronously during the page load that triggers them. This is not recommended for stores with more than a few waiting users."
+msgstr ""
+
+#: includes/class-bis-admin.php:265
+msgid "Email Deliverability"
+msgstr ""
+
+#: includes/class-bis-admin.php:266
+msgid "The plugin uses WooCommerce's built-in email sending functions, which in turn use WordPress's wp_mail(). To improve deliverability and avoid emails being marked as spam, the plugin sets the \"From\" name and email address to match your WooCommerce settings (or defaults to your site name and admin email)."
+msgstr ""
+
+#: includes/class-bis-admin.php:268
+msgid "For best results, we recommend using a dedicated SMTP plugin to send your WooCommerce emails, such as WP Mail SMTP or Post SMTP. These plugins can help ensure your emails are authenticated properly and have a much higher chance of reaching your customers' inboxes."
+msgstr ""
+
+#: includes/class-bis-admin.php:270
+msgid "Customizing Email Content"
+msgstr ""
+
+#: includes/class-bis-admin.php:271
+msgid "The automatic restock notification email content can be customized by using the \"woocommerce_email\" filter in your theme's functions.php file or a custom plugin. The manual alternative suggestion email content can be customized directly from the form on the \"Waitlists\" tab when managing a product's waitlist."
+msgstr ""
+
+#: includes/class-bis-admin.php:273
+msgid "If you need help with customizations or want to request a new feature, please contact us at modulux.net."
+msgstr ""
+
+#: includes/class-bis-admin.php:275
+msgid "Performance & Scalability"
+msgstr ""
+
+#: includes/class-bis-admin.php:276
+msgid "The plugin is designed to be lightweight and efficient, even with large numbers of waiting users. By leveraging caching for aggregate waitlist counts and using background processing for emails, it minimizes the impact on your server's performance."
+msgstr ""
+
+#: includes/class-bis-admin.php:278
+msgid "The waitlist management page uses pagination to ensure it loads quickly, even if thousands of users are waiting for a product. The alternative product suggestion form also uses WooCommerce's native AJAX product search to make it easy to find and select products without slowing down the page."
+msgstr ""
+
+#: includes/class-bis-admin.php:280
+msgid "Overall, the plugin should work well for stores of all sizes, from small shops with a few waiting customers to large enterprises with thousands of notifications to manage."
+msgstr ""
+
+#: includes/class-bis-admin.php:282
+msgid "Troubleshooting"
+msgstr ""
+
+#: includes/class-bis-admin.php:283
+msgid "If you are not seeing the \"Notify Me\" button on out-of-stock products, please check the following:"
+msgstr ""
+
+#: includes/class-bis-admin.php:285
+msgid "Make sure you are logged in, as the button only appears for logged-in users."
+msgstr ""
+
+#: includes/class-bis-admin.php:286
+msgid "Check that the product is actually marked as \"Out of Stock\" in WooCommerce."
+msgstr ""
+
+#: includes/class-bis-admin.php:287
+msgid "Temporarily switch to a default theme like Storefront to rule out any theme conflicts."
+msgstr ""
+
+#: includes/class-bis-admin.php:288
+msgid "Disable other plugins to check for conflicts, especially those that modify product pages or handle notifications."
+msgstr ""
+
+#: includes/class-bis-admin.php:292
+msgid "The following CSS classes can be used to customize the appearance of the plugin:"
+msgstr ""
+
+#: includes/class-bis-admin.php:316
+msgid "To customize the plugin appearance, add these CSS classes to your theme's custom CSS or child theme stylesheet. This keeps the plugin lightweight without adding unnecessary admin settings."
+msgstr ""
+
+#: includes/class-bis-admin.php:318
+msgid "Best Practices"
+msgstr ""
+
+#: includes/class-bis-admin.php:320
+msgid "Regularly check the \"Waitlists\" tab to manage your waiting customers and suggest alternatives."
+msgstr ""
+
+#: includes/class-bis-admin.php:321
+msgid "When restocking products, try to update inventory in the morning or early afternoon to ensure emails go out during optimal open times."
+msgstr ""
+
+#: includes/class-bis-admin.php:322
+msgid "Use the alternative product suggestion feature to potentially save sales even if the original product is delayed."
+msgstr ""
+
+#: includes/class-bis-admin.php:325
+msgid "Support & Contact"
+msgstr ""
+
+#: includes/class-bis-admin.php:326
+msgid "If you have any questions, need help with customizations, or want to report a bug, please contact us at <a href=\"https://modulux.net/\" target=\"_blank\">modulux.net</a>."
+msgstr ""
+
+#: includes/class-bis-admin.php:329
+msgid "Author:"
+msgstr ""
+
+#: includes/class-bis-admin.php:330
 msgid "Version:"
 msgstr ""
 
-#: includes/class-bis-admin.php:338
+#: includes/class-bis-admin.php:405
 msgid "Alternative Product Suggestion"
 msgstr ""
 
-#: includes/class-bis-admin.php:343
+#: includes/class-bis-admin.php:410
 msgid "View alternative product here:"
 msgstr ""
 

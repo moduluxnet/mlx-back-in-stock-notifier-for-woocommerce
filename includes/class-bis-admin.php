@@ -257,6 +257,73 @@ class Woo_BIS_Admin {
                 )
             )
         );
+
+        echo '<p>' . esc_html__('If you notice any failed actions, it usually means your server had a temporary issue sending an email. You can retry failed actions from the Scheduled Actions page, and they will be re-queued for processing.', 'mlx-back-in-stock-notifier-for-woocommerce') . '</p>';
+
+        echo '<p>' . esc_html__('If you want to disable background processing for some reason, the plugin will still work but all emails will be sent synchronously during the page load that triggers them. This is not recommended for stores with more than a few waiting users.', 'mlx-back-in-stock-notifier-for-woocommerce') . '</p>';
+
+        echo '<h3>' . esc_html__('Email Deliverability', 'mlx-back-in-stock-notifier-for-woocommerce') . '</h3>';
+        echo '<p>' . esc_html__('The plugin uses WooCommerce\'s built-in email sending functions, which in turn use WordPress\'s wp_mail(). To improve deliverability and avoid emails being marked as spam, the plugin sets the "From" name and email address to match your WooCommerce settings (or defaults to your site name and admin email).', 'mlx-back-in-stock-notifier-for-woocommerce') . '</p>';
+
+        echo '<p>' . esc_html__('For best results, we recommend using a dedicated SMTP plugin to send your WooCommerce emails, such as WP Mail SMTP or Post SMTP. These plugins can help ensure your emails are authenticated properly and have a much higher chance of reaching your customers\' inboxes.', 'mlx-back-in-stock-notifier-for-woocommerce') . '</p>';
+
+        echo '<h3>' . esc_html__('Customizing Email Content', 'mlx-back-in-stock-notifier-for-woocommerce') . '</h3>';
+        echo '<p>' . esc_html__('The automatic restock notification email content can be customized by using the "woocommerce_email" filter in your theme\'s functions.php file or a custom plugin. The manual alternative suggestion email content can be customized directly from the form on the "Waitlists" tab when managing a product\'s waitlist.', 'mlx-back-in-stock-notifier-for-woocommerce') . '</p>';
+
+        echo '<p>' . esc_html__('If you need help with customizations or want to request a new feature, please contact us at modulux.net.', 'mlx-back-in-stock-notifier-for-woocommerce') . '</p>';
+
+        echo '<h3>' . esc_html__('Performance & Scalability', 'mlx-back-in-stock-notifier-for-woocommerce') . '</h3>';
+        echo '<p>' . esc_html__('The plugin is designed to be lightweight and efficient, even with large numbers of waiting users. By leveraging caching for aggregate waitlist counts and using background processing for emails, it minimizes the impact on your server\'s performance.', 'mlx-back-in-stock-notifier-for-woocommerce') . '</p>';
+
+        echo '<p>' . esc_html__('The waitlist management page uses pagination to ensure it loads quickly, even if thousands of users are waiting for a product. The alternative product suggestion form also uses WooCommerce\'s native AJAX product search to make it easy to find and select products without slowing down the page.', 'mlx-back-in-stock-notifier-for-woocommerce') . '</p>';
+
+        echo '<p>' . esc_html__('Overall, the plugin should work well for stores of all sizes, from small shops with a few waiting customers to large enterprises with thousands of notifications to manage.', 'mlx-back-in-stock-notifier-for-woocommerce') . '</p>';
+
+        echo '<h3>' . esc_html__('Troubleshooting', 'mlx-back-in-stock-notifier-for-woocommerce') . '</h3>';
+        echo '<p>' . esc_html__('If you are not seeing the "Notify Me" button on out-of-stock products, please check the following:', 'mlx-back-in-stock-notifier-for-woocommerce') . '</p>';
+        echo '<ul class="bis-help-tab-list">';
+        echo '<li>' . esc_html__('Make sure you are logged in, as the button only appears for logged-in users.', 'mlx-back-in-stock-notifier-for-woocommerce') . '</li>';
+        echo '<li>' . esc_html__('Check that the product is actually marked as "Out of Stock" in WooCommerce.', 'mlx-back-in-stock-notifier-for-woocommerce') . '</li>';
+        echo '<li>' . esc_html__('Temporarily switch to a default theme like Storefront to rule out any theme conflicts.', 'mlx-back-in-stock-notifier-for-woocommerce') . '</li>';
+        echo '<li>' . esc_html__('Disable other plugins to check for conflicts, especially those that modify product pages or handle notifications.', 'mlx-back-in-stock-notifier-for-woocommerce') . '</li>';
+        echo '</ul>';
+
+        echo '<h3>Developer Notes</h3>';
+        echo '<p>' . esc_html__('The following CSS classes can be used to customize the appearance of the plugin:', 'mlx-back-in-stock-notifier-for-woocommerce') . '</p>';
+        echo '<pre><code>';
+        echo esc_html('.bis-notification-wrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px; 
+    border: 1px solid #ddd;
+}
+
+.bis-woocommerce-orders-table {
+    width: 100%; 
+    border-collapse: collapse;
+}
+
+.bis-woocommerce-orders-table th,
+.bis-woocommerce-orders-table td {
+    border: 1px solid #ddd; 
+    padding: 10px;
+}
+
+.bis-woocommerce-table__cell-actions {
+    width: 1%;
+}');
+        echo '</code></pre>';
+        echo '<p><em>' . esc_html__('To customize the plugin appearance, add these CSS classes to your theme\'s custom CSS or child theme stylesheet. This keeps the plugin lightweight without adding unnecessary admin settings.', 'mlx-back-in-stock-notifier-for-woocommerce') . '</em></p>';
+
+        echo '<h3>' . esc_html__('Best Practices', 'mlx-back-in-stock-notifier-for-woocommerce') . '</h3>';
+        echo '<ul class="bis-help-tab-list">';
+        echo '<li>' . esc_html__('Regularly check the "Waitlists" tab to manage your waiting customers and suggest alternatives.', 'mlx-back-in-stock-notifier-for-woocommerce') . '</li>';
+        echo '<li>' . esc_html__('When restocking products, try to update inventory in the morning or early afternoon to ensure emails go out during optimal open times.', 'mlx-back-in-stock-notifier-for-woocommerce') . '</li>';
+        echo '<li>' . esc_html__('Use the alternative product suggestion feature to potentially save sales even if the original product is delayed.', 'mlx-back-in-stock-notifier-for-woocommerce') . '</li>';
+        echo '</ul>';
+
+        echo '<h3>' . esc_html__('Support & Contact', 'mlx-back-in-stock-notifier-for-woocommerce') . '</h3>';
+        echo '<p>' . wp_kses(__('If you have any questions, need help with customizations, or want to report a bug, please contact us at <a href="https://modulux.net/" target="_blank">modulux.net</a>.', 'mlx-back-in-stock-notifier-for-woocommerce'), array('a' => array('href' => array(), 'target' => '_blank'))) . '</p>';
         
         echo '<hr>';
         echo '<p><strong>' . esc_html__('Author:', 'mlx-back-in-stock-notifier-for-woocommerce') . '</strong> <a href="https://modulux.net" target="_blank">modulux.net</a></p>';
