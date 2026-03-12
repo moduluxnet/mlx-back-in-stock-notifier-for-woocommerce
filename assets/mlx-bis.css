@@ -1,0 +1,61 @@
+.bis-help-tab-content {
+    max-width: 800px; 
+    background: #fff; 
+    padding: 20px; 
+    border: 1px solid #ccd0d4; 
+    margin-top: 20px;
+}
+
+.bis-help-tab-list {
+    list-style-type: disc; 
+    padding-left: 20px;
+}
+
+.bis-manage-container {
+    display: flex; 
+    gap: 40px; 
+    margin-top: 20px;
+}
+
+.bis-manage-form {
+    flex: 1; 
+    max-width: 500px; 
+    background: #fff; 
+    padding: 20px; 
+    border: 1px solid #ccd0d4; 
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.bis-full-width {
+    width: 100%;
+}
+
+.bis-user-list {
+    flex: 2;
+}
+
+.bis-notification-wrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px; 
+    border: 1px solid #ddd;
+}
+
+.bis-woocommerce-orders-table {
+    width: 100%; 
+    border-collapse: collapse;
+}
+
+.bis-woocommerce-orders-table th,
+.bis-woocommerce-orders-table td {
+    border: 1px solid #ddd; 
+    padding: 10px;
+}
+
+.bis-woocommerce-table__cell-actions {
+    width: 1% !important;
+}
+
+.bis-hidden {
+    display: none;
+}

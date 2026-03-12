@@ -1,0 +1,288 @@
+# Copyright (C) 2026 MLX Back in Stock Notifier for WooCommerce
+# This file is distributed under the same license as the MLX Back in Stock Notifier for WooCommerce package.
+msgid ""
+msgstr ""
+"Project-Id-Version: MLX Back in Stock Notifier for WooCommerce\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mlx-back-in-stock-"
+"notifier-for-woocommerce/\n"
+"POT-Creation-Date: 2026-03-12 07:45+0300\n"
+"PO-Revision-Date: 2026-03-12 07:45+0300\n"
+"Last-Translator: \n"
+"Language-Team: Turkish\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;esc_html;esc_html__;esc_attr;esc_attr__;__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/class-bis-admin.php:18
+msgid "Back In Stock Waitlists"
+msgstr "Stoka Gelince Bekleme Listeleri"
+
+#: includes/class-bis-admin.php:19
+msgid "Stock Waitlists"
+msgstr "Stok Bekleme Listeleri"
+
+#: includes/class-bis-admin.php:36
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Bu sayfaya erişmek için yeterli izne sahip değilsiniz."
+
+#: includes/class-bis-admin.php:45
+msgid "Back In Stock Notifier"
+msgstr "Stoka Gelince Bildirimi"
+
+#: includes/class-bis-admin.php:49
+msgid "Waitlists"
+msgstr "Bekleme Listeleri"
+
+#: includes/class-bis-admin.php:50
+msgid "Help & About"
+msgstr "Yardım ve Hakkında"
+
+#: includes/class-bis-admin.php:56
+msgid "Alternative product suggestion sent successfully."
+msgstr "Alternatif ürün önerisi başarıyla gönderildi."
+
+#: includes/class-bis-admin.php:94
+msgid "There are currently no users waiting for out-of-stock products."
+msgstr "Şu anda stoğu tükenen ürünler için bekleyen kullanıcı yok."
+
+#: includes/class-bis-admin.php:100
+msgid "Product Name"
+msgstr "Ürün Adı"
+
+#: includes/class-bis-admin.php:101 includes/class-bis-admin.php:189
+msgid "Waiting Customers"
+msgstr "Bekleyen Müşteriler"
+
+#: includes/class-bis-admin.php:102
+msgid "Current Stock Status"
+msgstr "Mevcut Stok Durumu"
+
+#: includes/class-bis-admin.php:103
+msgid "Actions"
+msgstr "İşlemler"
+
+#: includes/class-bis-admin.php:111
+msgid "In Stock"
+msgstr "Stokta"
+
+#: includes/class-bis-admin.php:111
+msgid "Out of Stock"
+msgstr "Stokta Yok"
+
+#: includes/class-bis-admin.php:117
+msgid "Manage"
+msgstr "Yönet"
+
+#: includes/class-bis-admin.php:155
+#, php-format
+msgid "Managing Waitlist for: %s"
+msgstr "Şunun bekleme listesi yönetiliyor: %s"
+
+#: includes/class-bis-admin.php:157
+#, php-format
+msgid "Total users waiting: %d"
+msgstr "Toplam bekleyen kullanıcı: %d"
+
+#: includes/class-bis-admin.php:164
+msgid "Suggest Alternative Product"
+msgstr "Alternatif Ürün Öner"
+
+#: includes/class-bis-admin.php:171
+msgid "Select Alternative Product:"
+msgstr "Alternatif Ürün Seçin:"
+
+#: includes/class-bis-admin.php:173
+msgid "Search for a product..."
+msgstr "Bir ürün arayın..."
+
+#: includes/class-bis-admin.php:176
+#, php-format
+msgid ""
+"Hello! We noticed you are waiting for %s. While we work on restocking it, we "
+"thought you might love this alternative product!"
+msgstr ""
+"Merhaba! %s için beklediğinizi fark ettik. Bu ürünü yeniden stoğa eklemek "
+"için çalışırken, bu alternatif ürünü de beğenebileceğinizi düşündük!"
+
+#: includes/class-bis-admin.php:178
+msgid "Message Template:"
+msgstr "Mesaj Şablonu:"
+
+#: includes/class-bis-admin.php:181
+msgid "Keep users on the waitlist for the original product after sending."
+msgstr ""
+"Gönderimden sonra kullanıcıları orijinal ürünün bekleme listesinde tut."
+
+#: includes/class-bis-admin.php:183
+msgid "Inform waiting users alternative product exists"
+msgstr "Bekleyen kullanıcılara alternatif ürün olduğunu bildir"
+
+#: includes/class-bis-admin.php:191
+msgid "Email"
+msgstr "E-posta"
+
+#: includes/class-bis-admin.php:191
+msgid "Registered Name"
+msgstr "Kayıtlı Ad"
+
+#: includes/class-bis-admin.php:201
+msgid "No users found."
+msgstr "Kullanıcı bulunamadı."
+
+#: includes/class-bis-admin.php:211
+msgid "&laquo; Previous"
+msgstr "&laquo; Önceki"
+
+#: includes/class-bis-admin.php:213
+msgid "Next &raquo;"
+msgstr "Sonraki &raquo;"
+
+#: includes/class-bis-admin.php:230
+msgid "Help & Information"
+msgstr "Yardım ve Bilgilendirme"
+
+#: includes/class-bis-admin.php:231
+msgid ""
+"The MLX Back In Stock Notifier automatically adds a \"Notify Me\" button to "
+"any out-of-stock product."
+msgstr ""
+"MLX Back In Stock Notifier, stokta olmayan ürünlere otomatik olarak bir "
+"\"Bana Bildir\" düğmesi ekler."
+
+#: includes/class-bis-admin.php:233
+msgid "How it works:"
+msgstr "Nasıl çalışır:"
+
+#: includes/class-bis-admin.php:235
+msgid "Users click the button to join the waitlist."
+msgstr "Kullanıcılar bekleme listesine katılmak için düğmeye tıklar."
+
+#: includes/class-bis-admin.php:236
+msgid ""
+"When you update the product inventory to \"In Stock\", the plugin queues an "
+"email to everyone on the list."
+msgstr ""
+"Ürün stok durumunu \"Stokta Yok\"tan \"Stokta\" olarak güncellediğinizde, "
+"eklenti listedeki herkese otomatik olarak e-posta gönderir."
+
+#: includes/class-bis-admin.php:237
+msgid ""
+"You can use the \"Waitlists\" tab to manually suggest alternative products "
+"to users who are waiting."
+msgstr ""
+"Bekleyen kullanıcılara manuel olarak alternatif ürün önermek için \"Bekleme "
+"Listeleri\" sekmesini kullanabilirsiniz."
+
+#: includes/class-bis-admin.php:240
+msgid "Background Processing (Action Scheduler)"
+msgstr "Arka Plan İşlemleri (Eylem Zamanlayıcı)"
+
+#: includes/class-bis-admin.php:241
+msgid ""
+"To ensure your website never slows down or crashes, all emails (both "
+"automatic restocks and manual alternative suggestions) are processed in the "
+"background using WooCommerce's native Action Scheduler."
+msgstr ""
+"Web sitenizin hiçbir zaman yavaşlamamasını veya çökmemesini sağlamak için, "
+"tüm e-postalar (hem otomatik stok yenilemeleri hem de manuel alternatif "
+"öneriler) WooCommerce'in yerel Eylem Planlayıcısı kullanılarak arka planda "
+"işlenir."
+
+#: includes/class-bis-admin.php:250
+#, php-format
+msgid ""
+"If you have hundreds of users waiting, emails will be sent safely in batches "
+"over a few minutes. You can view the status of pending emails by going to <a "
+"href=\"%s\">WooCommerce > Status > Scheduled Actions</a>."
+msgstr ""
+"Yüzlerce kullanıcı bekliyorsa, e-postalar birkaç dakika içinde güvenli bir "
+"şekilde toplu olarak gönderilecektir. Bekleyen e-postaların durumunu <a "
+"href=\"%s\">WooCommerce &gt; Durum &gt; Planlanmış İşlemler</a> bölümünden "
+"görüntüleyebilirsiniz."
+
+#: includes/class-bis-admin.php:262
+msgid "Author:"
+msgstr "Yazar:"
+
+#: includes/class-bis-admin.php:263
+msgid "Version:"
+msgstr "Sürüm:"
+
+#: includes/class-bis-admin.php:338
+msgid "Alternative Product Suggestion"
+msgstr "Alternatif Ürün Önerisi"
+
+#: includes/class-bis-admin.php:343
+msgid "View alternative product here:"
+msgstr "Alternatif ürünü burada görüntüleyin:"
+
+#: includes/class-bis-handler.php:56
+msgid "Please log in to subscribe for back in stock notifications."
+msgstr ""
+"Stokta yeniden mevcut olduğunda bildirim almak için lütfen giriş yapın."
+
+#: includes/class-bis-handler.php:65
+msgid "You are on the waitlist for this item."
+msgstr "Bu ürün için bekleme listesine alındınız."
+
+#: includes/class-bis-handler.php:66
+msgid "Manage Notifications"
+msgstr "Bildirimleri Yönet"
+
+#: includes/class-bis-handler.php:70
+msgid "This item is currently out of stock. Want an email when it returns?"
+msgstr ""
+"Bu ürün şu anda stokta yok. Yeniden geldiğinde e-posta almak ister misiniz?"
+
+#: includes/class-bis-handler.php:71 includes/class-bis-handler.php:79
+msgid "Notify Me"
+msgstr "Bana Bildir"
+
+#: includes/class-bis-handler.php:80
+msgid "Subscribed"
+msgstr "Abone Olundu"
+
+#: includes/class-bis-handler.php:155
+msgid "Item back in stock:"
+msgstr "Ürün yeniden stokta:"
+
+#: includes/class-bis-handler.php:157
+msgid "Great news!"
+msgstr "Harika haber!"
+
+#: includes/class-bis-handler.php:158
+msgid "is back in stock."
+msgstr "yeniden stokta."
+
+#: includes/class-bis-handler.php:159
+msgid "Shop now"
+msgstr "Hemen satın alın"
+
+#: includes/class-bis-handler.php:173
+msgid "Stock Notifications"
+msgstr "Stok Bildirimleri"
+
+#: includes/class-bis-handler.php:187
+msgid "Notification removed."
+msgstr "Bildirim kaldırıldı."
+
+#: includes/class-bis-handler.php:193
+msgid "You have no active stock notifications."
+msgstr "Aktif stok bildiriminiz bulunmuyor."
+
+#: includes/class-bis-handler.php:198
+msgid "Product"
+msgstr "Ürün"
+
+#: includes/class-bis-handler.php:198
+msgid "Action"
+msgstr "İşlem"
+
+#: includes/class-bis-handler.php:204
+msgid "Remove"
+msgstr "Kaldır"
